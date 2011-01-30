@@ -31,6 +31,8 @@
 		36D47BA612F569D10087DE9F /* XFUDPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D47B9212F569D10087DE9F /* XFUDPConnection.h */; };
 		36D47BA712F569D10087DE9F /* XFUDPPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D47B9312F569D10087DE9F /* XFUDPPacket.cpp */; };
 		36D47BA812F569D10087DE9F /* XFUDPPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D47B9412F569D10087DE9F /* XFUDPPacket.h */; };
+		36D47BFD12F5BDCD0087DE9F /* XFAccount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D47BFB12F5BDCD0087DE9F /* XFAccount.cpp */; };
+		36D47BFE12F5BDCD0087DE9F /* XFAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D47BFC12F5BDCD0087DE9F /* XFAccount.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		36D47B9212F569D10087DE9F /* XFUDPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFUDPConnection.h; path = ../source/XFUDPConnection.h; sourceTree = SOURCE_ROOT; };
 		36D47B9312F569D10087DE9F /* XFUDPPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XFUDPPacket.cpp; path = ../source/XFUDPPacket.cpp; sourceTree = SOURCE_ROOT; };
 		36D47B9412F569D10087DE9F /* XFUDPPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFUDPPacket.h; path = ../source/XFUDPPacket.h; sourceTree = SOURCE_ROOT; };
+		36D47BFB12F5BDCD0087DE9F /* XFAccount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XFAccount.cpp; path = ../source/XFAccount.cpp; sourceTree = SOURCE_ROOT; };
+		36D47BFC12F5BDCD0087DE9F /* XFAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XFAccount.h; path = ../source/XFAccount.h; sourceTree = SOURCE_ROOT; };
 		5073E0C609E734A800EC74B6 /* XfireKitProj.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = XfireKitProj.xcconfig; sourceTree = "<group>"; };
 		5073E0C709E734A800EC74B6 /* XfireKitTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = XfireKitTarget.xcconfig; sourceTree = "<group>"; };
 		D2AAC09D05546B4700DB518D /* XfireKit.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = XfireKit.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +117,8 @@
 		3643232212F4DD9A00DF1F17 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				36D47BFB12F5BDCD0087DE9F /* XFAccount.cpp */,
+				36D47BFC12F5BDCD0087DE9F /* XFAccount.h */,
 				36D47B8112F569D10087DE9F /* XFChat.cpp */,
 				36D47B8212F569D10087DE9F /* XFChat.h */,
 				36D47B8312F569D10087DE9F /* XFConnection.cpp */,
@@ -169,6 +175,7 @@
 				36D47BA412F569D10087DE9F /* XFSocket.h in Headers */,
 				36D47BA612F569D10087DE9F /* XFUDPConnection.h in Headers */,
 				36D47BA812F569D10087DE9F /* XFUDPPacket.h in Headers */,
+				36D47BFE12F5BDCD0087DE9F /* XFAccount.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +241,7 @@
 				36D47BA312F569D10087DE9F /* XFSocket.cpp in Sources */,
 				36D47BA512F569D10087DE9F /* XFUDPConnection.cpp in Sources */,
 				36D47BA712F569D10087DE9F /* XFUDPPacket.cpp in Sources */,
+				36D47BFD12F5BDCD0087DE9F /* XFAccount.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,7 @@
 #include "XFKit.h"
 
-class XFConnection
-{};
+namespace XfireKit
+{
+	class XFConnection
+	{};
+}

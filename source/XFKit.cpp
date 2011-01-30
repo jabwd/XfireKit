@@ -17,12 +17,12 @@ void xfPrintf(const char *format,...)
 } // xfPrintf();
 
 
-XFInteger32 ipFromString(const char *ip)
+uint32 ipFromString(const char *ip)
 {
 	return 0; // TBD
 }
 
-const char *stringFromIP(XFInteger32 ip)
+const char *stringFromIP(uint32 ip)
 {
 	return NULL;
 }
@@ -31,17 +31,17 @@ const char *stringFromIP(XFInteger32 ip)
 /*
  * Byte swapping, it swaps Little to Big and Big to little
  */
-XFUInteger16 endianSwap(XFUInteger16 x)
+uint16 endianSwap(uint16 x)
 {
 	return (x>>8)|(x<<8);
 }
 
-XFUInteger32 endianSwap(XFUInteger32 x)
+uint32 endianSwap(uint32 x)
 {
 	return (x>>24)|((x<<8) & 0x00FF0000)|((x>>8) & 0x0000FF00)|(x<<24);
 }
 
-XFUInteger64 endianSwap(XFUInteger64 x)
+uint64 endianSwap(uint64 x)
 {
 	return	(x>>56)												 | 
 					((x<<40) & 0x00FF000000000000) |

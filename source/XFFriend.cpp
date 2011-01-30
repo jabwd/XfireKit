@@ -1,10 +1,10 @@
 #include "XFFriend.h"
 
-XFFriend::XFFriend()
+XfireKit::XFFriend::XFFriend()
 {
 }
 
-XFFriend::~XFFriend()
+XfireKit::XFFriend::~XFFriend()
 {
 	
 	if( this->sessionID )
@@ -20,7 +20,7 @@ XFFriend::~XFFriend()
  * current XFFriend instance.
  * TODO: add more details
  */
-void XFFriend::description()
+void XfireKit::XFFriend::description()
 {	
 	xfPrintf("XFFriend\nUserID = %u\nUsername = \"%s\"",this->userID,this->userName.data());
 }

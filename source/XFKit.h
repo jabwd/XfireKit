@@ -8,23 +8,28 @@
 #include <iostream>
 #include <string>
  
+// if turned to 1 XfireKit will log much more data for debugging purposes
+// to the console
 #define DEBUG_LOGGING 0
 #define XFIRE_PORT 25999
 #define XFIRE_HOST "cs.xfire.com"
 
 using namespace std;
  
-typedef char 						XFInteger8;
-typedef unsigned char 	XFUInteger8;
+/*
+ * Our personal types
+ */
+typedef unsigned char 	uint8;
+typedef char 						int8;
 
-typedef unsigned short 	XFUInteger16;
-typedef short						XFInteger16;
+typedef unsigned short 	uint16;
+typedef short						int16;
  
-typedef unsigned int 		XFUInteger32;
-typedef int							XFInteger32;
+typedef unsigned int 		uint32;
+typedef int							int32;
 
-typedef unsigned long   XFUInteger64;
-typedef long						XFInteger64;
+typedef unsigned long   uint64;
+typedef long						int64;
  
 /*
  * printf() but then disabled when debug logging is turned off
@@ -32,8 +37,15 @@ typedef long						XFInteger64;
 void xfPrintf(const char *format,...);
 
 /*
+ * Bit shifting for creating network useable IP's,
+ * or creating human readable ip from an network ip
+ */
+uint32 ipFromString(const char *ip);
+const char *stringFromIP(uint32 ip);
+
+/*
  * Byte swapping
  */
-XFUInteger16 endianSwap(XFUInteger16 x);
-XFUInteger32 endianSwap(XFUInteger32 x);
-XFUInteger64 endianSwap(XFUInteger64 x);
+uint16 endianSwap(uint16 x);
+uint32 endianSwap(uint32 x);
+uint64 endianSwap(uint64 x);
