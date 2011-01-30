@@ -1,5 +1,7 @@
 #include "XFKit.h"
-#include "XFPacket.h"
+
+
+class XFPacket;
 
 class XFUDPPacket
 {};
