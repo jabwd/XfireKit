@@ -53,8 +53,8 @@ namespace XfireKit
 	/*
 	 * Byte swapping
 	 */
-	uint16 endianSwap(uint16 x);
-	uint32 endianSwap(uint32 x);
-	uint64 endianSwap(uint64 x);
+	uint16 endianSwap(uint16 p_x);
+	uint32 endianSwap(uint32 p_x);
+	uint64 endianSwap(uint64 p_x);
 
 }
