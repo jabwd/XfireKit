@@ -10,7 +10,7 @@
  
 // if turned to 1 XfireKit will log much more data for debugging purposes
 // to the console
-#define DEBUG_LOGGING 0
+#define DEBUG_LOGGING	0
 #define XFIRE_PORT		25999
 #define XFIRE_HOST		"cs.xfire.com"
 
@@ -20,14 +20,14 @@ namespace XfireKit
 	/*
 	 * Our personal types
 	 */
-	typedef unsigned char 	uint8;
-	typedef char 						int8;
-	typedef unsigned short 	uint16;
-	typedef short						int16;
-	typedef unsigned int 		uint32;
-	typedef int							int32;
-	typedef unsigned long   uint64;
-	typedef long						int64;
+	typedef unsigned char	uint8;
+	typedef char 			int8;
+	typedef unsigned short	uint16;
+	typedef short			int16;
+	typedef unsigned int	uint32;
+	typedef int				int32;
+	typedef unsigned long	uint64;
+	typedef long			int64;
 	
 	/*
 	 * printf() but then disabled when debug logging is turned off
@@ -39,7 +39,7 @@ namespace XfireKit
 	 * or creating human readable ip from an network ip
 	 */
 	uint32			ipFromString(const char *ip);
-	const char	*stringFromIP(uint32 ip);
+	const char		*stringFromIP(uint32 ip);
 	
 	/*
 	 * Byte swapping
