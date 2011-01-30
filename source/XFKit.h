@@ -6,6 +6,8 @@
  */
  
 #include <iostream>
+#include <string>
+using namespace std;
  
 #define DEBUG_LOGGING 0
  
@@ -18,7 +20,7 @@ typedef short						XFInteger16;
 typedef unsigned int 		XFUInteger32;
 typedef int							XFInteger32;
  
- /*
-  * printf() but then disabled when debug logging is turned off
-  */
+/*
+ * printf() but then disabled when debug logging is turned off
+ */
 void xfPrintf(const char *format,...);
