@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		36397CEA12F62583006A2FB2 /* XfireKit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36397CE812F62583006A2FB2 /* XfireKit.cpp */; };
 		36397CEB12F62583006A2FB2 /* XfireKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 36397CE912F62583006A2FB2 /* XfireKit.h */; };
+		3639858312F62DC5006A2FB2 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 3639858112F62DC5006A2FB2 /* sha1.c */; };
+		3639858412F62DC5006A2FB2 /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3639858212F62DC5006A2FB2 /* sha1.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		32BAE0B70371A74B00C91783 /* XfireKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XfireKit_Prefix.pch; sourceTree = "<group>"; };
 		36397CE812F62583006A2FB2 /* XfireKit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XfireKit.cpp; path = ../source/XfireKit.cpp; sourceTree = SOURCE_ROOT; };
 		36397CE912F62583006A2FB2 /* XfireKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XfireKit.h; path = ../source/XfireKit.h; sourceTree = SOURCE_ROOT; };
+		3639858112F62DC5006A2FB2 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = ../source/sha1.c; sourceTree = SOURCE_ROOT; };
+		3639858212F62DC5006A2FB2 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = ../source/sha1.h; sourceTree = SOURCE_ROOT; };
 		5073E0C609E734A800EC74B6 /* XfireKitProj.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = XfireKitProj.xcconfig; sourceTree = "<group>"; };
 		5073E0C709E734A800EC74B6 /* XfireKitTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = XfireKitTarget.xcconfig; sourceTree = "<group>"; };
 		D2AAC09D05546B4700DB518D /* XfireKit.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = XfireKit.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +73,8 @@
 		3643232212F4DD9A00DF1F17 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3639858112F62DC5006A2FB2 /* sha1.c */,
+				3639858212F62DC5006A2FB2 /* sha1.h */,
 				36397CE812F62583006A2FB2 /* XfireKit.cpp */,
 				36397CE912F62583006A2FB2 /* XfireKit.h */,
 			);
@@ -92,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36397CEB12F62583006A2FB2 /* XfireKit.h in Headers */,
+				3639858412F62DC5006A2FB2 /* sha1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36397CEA12F62583006A2FB2 /* XfireKit.cpp in Sources */,
+				3639858312F62DC5006A2FB2 /* sha1.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

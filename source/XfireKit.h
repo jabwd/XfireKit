@@ -30,22 +30,17 @@ namespace XfireKit
 	typedef long			int64;
 	
 	/*
-	 * printf() but then disabled when debug logging is turned off
-	 */
-	void xfPrintf(const char *format,...);
-	
-	/*
 	 * Bit shifting for creating network useable IP's,
 	 * or creating human readable ip from an network ip
 	 */
-	uint32			ipFromString(const char *ip);
-	const char		*stringFromIP(uint32 ip);
+	uint32		ipFromString(const char *p_ip);
+	const char	*stringFromIP(uint32 p_ip);
 	
 	/*
 	 * Byte swapping
 	 */
-	uint16 endianSwap(uint16 x);
-	uint32 endianSwap(uint32 x);
-	uint64 endianSwap(uint64 x);
+	uint16 endianSwap(uint16 p_x);
+	uint32 endianSwap(uint32 p_x);
+	uint64 endianSwap(uint64 p_x);
 
 }
