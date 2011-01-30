@@ -1,0 +1,2 @@
+#include "XFGroupChat.h"
+

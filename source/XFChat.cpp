@@ -1,0 +1,2 @@
+#include "XFChat.h"
+
