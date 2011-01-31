@@ -10,7 +10,7 @@ namespace XfireKit
 	{
 	public:
 		SessionID();
-		SessionID(const uint8 p_data[XK_SESSIONID_LEN]);
+		SessionID(const uint8 *p_data);
 		SessionID(const SessionID &p_other);
 		~SessionID();
 		
@@ -27,7 +27,7 @@ namespace XfireKit
 		/*
 		 * Instance variables
 		 */
-		uint8 m_data[];
+		uint8 *m_data;
 	private:
 	};
 }

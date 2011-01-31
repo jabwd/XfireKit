@@ -1,9 +1,12 @@
+#include <iostream>
 #include "SessionID.h"
 
 namespace XfireKit
 {
 	SessionID::SessionID()
 	{
+		m_data = new uint8[XK_SESSIONID_LEN];
+		memset(m_data,0,XK_SESSIONID_LEN);
 	}
 	
 	
@@ -20,7 +23,6 @@ namespace XfireKit
 	SessionID::~SessionID()
 	{
 		delete[] m_data;
-
 	}
 	
 	/*

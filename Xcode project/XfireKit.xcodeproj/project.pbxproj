@@ -3,25 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36397CEA12F62583006A2FB2 /* XfireKit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36397CE812F62583006A2FB2 /* XfireKit.cpp */; };
-		36397CEB12F62583006A2FB2 /* XfireKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 36397CE912F62583006A2FB2 /* XfireKit.h */; };
+		360F8F2D12F6B91900C69C6F /* XfireKit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 360F8F2B12F6B91900C69C6F /* XfireKit.cpp */; };
+		360F8F2E12F6B91900C69C6F /* XfireKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 360F8F2C12F6B91900C69C6F /* XfireKit.h */; };
+		360F8F3112F6B95C00C69C6F /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 360F8F2F12F6B95C00C69C6F /* sha1.c */; };
+		360F8F3212F6B95C00C69C6F /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 360F8F3012F6B95C00C69C6F /* sha1.h */; };
+		360F8F3412F6B98200C69C6F /* SessionID.h in Headers */ = {isa = PBXBuildFile; fileRef = 360F8F3312F6B98200C69C6F /* SessionID.h */; };
+		360F8F3612F6B98A00C69C6F /* SessionID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 360F8F3512F6B98A00C69C6F /* SessionID.cpp */; };
+		360F8F3D12F6BAE500C69C6F /* Moniker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 360F8F3B12F6BAE500C69C6F /* Moniker.cpp */; };
+		360F8F3E12F6BAE500C69C6F /* Moniker.h in Headers */ = {isa = PBXBuildFile; fileRef = 360F8F3C12F6BAE500C69C6F /* Moniker.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		32BAE0B70371A74B00C91783 /* XfireKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XfireKit_Prefix.pch; sourceTree = "<group>"; };
-		36397CE812F62583006A2FB2 /* XfireKit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XfireKit.cpp; path = ../source/XfireKit.cpp; sourceTree = SOURCE_ROOT; };
-		36397CE912F62583006A2FB2 /* XfireKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XfireKit.h; path = ../source/XfireKit.h; sourceTree = SOURCE_ROOT; };
-		5073E0C609E734A800EC74B6 /* XfireKitProj.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = XfireKitProj.xcconfig; sourceTree = "<group>"; };
-		5073E0C709E734A800EC74B6 /* XfireKitTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = XfireKitTarget.xcconfig; sourceTree = "<group>"; };
-		D2AAC09D05546B4700DB518D /* XfireKit.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = XfireKit.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		360F8F1A12F6B8DC00C69C6F /* XfireKit.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = XfireKit.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		360F8F1E12F6B8DC00C69C6F /* XfireKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XfireKit-Prefix.pch"; sourceTree = "<group>"; };
+		360F8F1F12F6B8DC00C69C6F /* XfireKitProj.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = XfireKitProj.xcconfig; sourceTree = "<group>"; };
+		360F8F2012F6B8DC00C69C6F /* XfireKitTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = XfireKitTarget.xcconfig; sourceTree = "<group>"; };
+		360F8F2B12F6B91900C69C6F /* XfireKit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XfireKit.cpp; path = ../../source/XfireKit.cpp; sourceTree = "<group>"; };
+		360F8F2C12F6B91900C69C6F /* XfireKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XfireKit.h; path = ../../source/XfireKit.h; sourceTree = "<group>"; };
+		360F8F2F12F6B95C00C69C6F /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = ../../source/sha1.c; sourceTree = "<group>"; };
+		360F8F3012F6B95C00C69C6F /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = ../../source/sha1.h; sourceTree = "<group>"; };
+		360F8F3312F6B98200C69C6F /* SessionID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SessionID.h; path = ../../source/SessionID.h; sourceTree = "<group>"; };
+		360F8F3512F6B98A00C69C6F /* SessionID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SessionID.cpp; path = ../../source/SessionID.cpp; sourceTree = "<group>"; };
+		360F8F3B12F6BAE500C69C6F /* Moniker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Moniker.cpp; path = ../../source/Moniker.cpp; sourceTree = "<group>"; };
+		360F8F3C12F6BAE500C69C6F /* Moniker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Moniker.h; path = ../../source/Moniker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D2AAC09B05546B4700DB518D /* Frameworks */ = {
+		360F8F1712F6B8DC00C69C6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,206 +43,195 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		034768DDFF38A45A11DB9C8B /* Products */ = {
+		360F8F0F12F6B8DC00C69C6F = {
 			isa = PBXGroup;
 			children = (
-				D2AAC09D05546B4700DB518D /* XfireKit.dylib */,
+				360F8F1C12F6B8DC00C69C6F /* XfireKit */,
+				360F8F1B12F6B8DC00C69C6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		360F8F1B12F6B8DC00C69C6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				360F8F1A12F6B8DC00C69C6F /* XfireKit.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0867D691FE84028FC02AAC07 /* XfireKit */ = {
+		360F8F1C12F6B8DC00C69C6F /* XfireKit */ = {
 			isa = PBXGroup;
 			children = (
-				5073E0CA09E734BC00EC74B6 /* Configuration Files */,
-				08FB77ACFE841707C02AAC07 /* Source */,
-				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
-				034768DDFF38A45A11DB9C8B /* Products */,
+				360F8F2B12F6B91900C69C6F /* XfireKit.cpp */,
+				360F8F2C12F6B91900C69C6F /* XfireKit.h */,
+				360F8F3512F6B98A00C69C6F /* SessionID.cpp */,
+				360F8F3312F6B98200C69C6F /* SessionID.h */,
+				360F8F3B12F6BAE500C69C6F /* Moniker.cpp */,
+				360F8F3C12F6BAE500C69C6F /* Moniker.h */,
+				360F8F2F12F6B95C00C69C6F /* sha1.c */,
+				360F8F3012F6B95C00C69C6F /* sha1.h */,
+				360F8F1F12F6B8DC00C69C6F /* XfireKitProj.xcconfig */,
+				360F8F2012F6B8DC00C69C6F /* XfireKitTarget.xcconfig */,
+				360F8F1D12F6B8DC00C69C6F /* Supporting Files */,
 			);
-			name = XfireKit;
+			path = XfireKit;
 			sourceTree = "<group>";
 		};
-		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+		360F8F1D12F6B8DC00C69C6F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				360F8F1E12F6B8DC00C69C6F /* XfireKit-Prefix.pch */,
 			);
-			name = "External Frameworks and Libraries";
-			sourceTree = "<group>";
-		};
-		08FB77ACFE841707C02AAC07 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				3643232212F4DD9A00DF1F17 /* Source */,
-				32BAE0B70371A74B00C91783 /* XfireKit_Prefix.pch */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		3643232212F4DD9A00DF1F17 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				36397CE812F62583006A2FB2 /* XfireKit.cpp */,
-				36397CE912F62583006A2FB2 /* XfireKit.h */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		5073E0CA09E734BC00EC74B6 /* Configuration Files */ = {
-			isa = PBXGroup;
-			children = (
-				5073E0C609E734A800EC74B6 /* XfireKitProj.xcconfig */,
-				5073E0C709E734A800EC74B6 /* XfireKitTarget.xcconfig */,
-			);
-			name = "Configuration Files";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D2AAC09905546B4700DB518D /* Headers */ = {
+		360F8F1812F6B8DC00C69C6F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36397CEB12F62583006A2FB2 /* XfireKit.h in Headers */,
+				360F8F2E12F6B91900C69C6F /* XfireKit.h in Headers */,
+				360F8F3212F6B95C00C69C6F /* sha1.h in Headers */,
+				360F8F3412F6B98200C69C6F /* SessionID.h in Headers */,
+				360F8F3E12F6BAE500C69C6F /* Moniker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D2AAC09C05546B4700DB518D /* XfireKit */ = {
+		360F8F1912F6B8DC00C69C6F /* XfireKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB916008733D950010E9CD /* Build configuration list for PBXNativeTarget "XfireKit" */;
+			buildConfigurationList = 360F8F2812F6B8DC00C69C6F /* Build configuration list for PBXNativeTarget "XfireKit" */;
 			buildPhases = (
-				D2AAC09905546B4700DB518D /* Headers */,
-				D2AAC09B05546B4700DB518D /* Frameworks */,
-				D2AAC09A05546B4700DB518D /* Sources */,
+				360F8F1612F6B8DC00C69C6F /* Sources */,
+				360F8F1712F6B8DC00C69C6F /* Frameworks */,
+				360F8F1812F6B8DC00C69C6F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = XfireKit;
-			productName = libXfireKit;
-			productReference = D2AAC09D05546B4700DB518D /* XfireKit.dylib */;
+			productName = XfireKit;
+			productReference = 360F8F1A12F6B8DC00C69C6F /* XfireKit.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0867D690FE84028FC02AAC07 /* Project object */ = {
+		360F8F1112F6B8DC00C69C6F /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DEB916408733D950010E9CD /* Build configuration list for PBXProject "XfireKit" */;
-			compatibilityVersion = "Xcode 3.1";
+			attributes = {
+				ORGANIZATIONNAME = Exurion;
+			};
+			buildConfigurationList = 360F8F1412F6B8DC00C69C6F /* Build configuration list for PBXProject "XfireKit" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
-			hasScannedForEncodings = 1;
+			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				en,
 			);
-			mainGroup = 0867D691FE84028FC02AAC07 /* XfireKit */;
-			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			mainGroup = 360F8F0F12F6B8DC00C69C6F;
+			productRefGroup = 360F8F1B12F6B8DC00C69C6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2AAC09C05546B4700DB518D /* XfireKit */,
+				360F8F1912F6B8DC00C69C6F /* XfireKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D2AAC09A05546B4700DB518D /* Sources */ = {
+		360F8F1612F6B8DC00C69C6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36397CEA12F62583006A2FB2 /* XfireKit.cpp in Sources */,
+				360F8F2D12F6B91900C69C6F /* XfireKit.cpp in Sources */,
+				360F8F3112F6B95C00C69C6F /* sha1.c in Sources */,
+				360F8F3612F6B98A00C69C6F /* SessionID.cpp in Sources */,
+				360F8F3D12F6BAE500C69C6F /* Moniker.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB916108733D950010E9CD /* Debug */ = {
+		360F8F2612F6B8DC00C69C6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5073E0C709E734A800EC74B6 /* XfireKitTarget.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		360F8F2712F6B8DC00C69C6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		360F8F2912F6B8DC00C69C6F /* Debug */ = {
+			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = XfireKit_Prefix.pch;
-				PRODUCT_NAME = XfireKit;
-				SYMROOT = "~/Developer/Build";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		1DEB916208733D950010E9CD /* Release */ = {
+		360F8F2A12F6B8DC00C69C6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5073E0C709E734A800EC74B6 /* XfireKitTarget.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = XfireKit_Prefix.pch;
-				STRIP_INSTALLED_PRODUCT = YES;
-				STRIP_STYLE = "non-global";
-			};
-			name = Release;
-		};
-		1DEB916508733D950010E9CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5073E0C609E734A800EC74B6 /* XfireKitProj.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
-			};
-			name = Debug;
-		};
-		1DEB916608733D950010E9CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5073E0C609E734A800EC74B6 /* XfireKitProj.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB916008733D950010E9CD /* Build configuration list for PBXNativeTarget "XfireKit" */ = {
+		360F8F1412F6B8DC00C69C6F /* Build configuration list for PBXProject "XfireKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB916108733D950010E9CD /* Debug */,
-				1DEB916208733D950010E9CD /* Release */,
+				360F8F2612F6B8DC00C69C6F /* Debug */,
+				360F8F2712F6B8DC00C69C6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB916408733D950010E9CD /* Build configuration list for PBXProject "XfireKit" */ = {
+		360F8F2812F6B8DC00C69C6F /* Build configuration list for PBXNativeTarget "XfireKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB916508733D950010E9CD /* Debug */,
-				1DEB916608733D950010E9CD /* Release */,
+				360F8F2912F6B8DC00C69C6F /* Debug */,
+				360F8F2A12F6B8DC00C69C6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+	rootObject = 360F8F1112F6B8DC00C69C6F /* Project object */;
 }

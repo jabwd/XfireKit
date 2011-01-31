@@ -4,7 +4,6 @@
  * Copyright Oliver Ney & Antwan van Houdt 2010-2011,
  * All rights reserved
  */
-
 // if turned to 1 XfireKit will log much more data for debugging purposes
 // to the console
 #ifndef XK_DEBUG_LOGGING

@@ -178,7 +178,7 @@
 	<key>FavBarConfig</key>
 	<dict>
 		<key>PBXProjectModuleGUID</key>
-		<string>3613E00112F64B4A001A424A</string>
+		<string>36322FA012F6C08600499A53</string>
 		<key>XCBarModuleItemNames</key>
 		<dict/>
 		<key>XCBarModuleItems</key>
@@ -267,16 +267,13 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
-								<string>0867D691FE84028FC02AAC07</string>
-								<string>08FB77ACFE841707C02AAC07</string>
-								<string>1C37FBAC04509CD000000102</string>
+								<string>360F8F0F12F6B8DC00C69C6F</string>
+								<string>360F8F1C12F6B8DC00C69C6F</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -316,7 +313,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SessionID.cpp</string>
+								<string>MyNewFile14.java</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,21 +321,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SessionID.cpp</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>3613E02E12F64BEE001A424A</string>
-										<key>history</key>
-										<array>
-											<string>3613E02612F64BEE001A424A</string>
-											<string>3613E02712F64BEE001A424A</string>
-											<string>3613E02812F64BEE001A424A</string>
-											<string>3613E02912F64BEE001A424A</string>
-											<string>3613E02A12F64BEE001A424A</string>
-											<string>3613E02B12F64BEE001A424A</string>
-											<string>3613E02C12F64BEE001A424A</string>
-										</array>
+										<string>MyNewFile14.java</string>
 									</dict>
 									<key>SplitCount</key>
 									<string>1</string>
@@ -349,14 +332,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {580, 269}}</string>
+								<string>{{0, 0}, {580, 277}}</string>
 								<key>RubberWindowFrame</key>
 								<string>566 439 788 504 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>269pt</string>
+							<string>277pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -369,14 +352,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 274}, {580, 189}}</string>
+								<string>{{0, 282}, {580, 181}}</string>
 								<key>RubberWindowFrame</key>
 								<string>566 439 788 504 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>189pt</string>
+							<string>181pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -395,9 +378,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>3613E00C12F64B6C001A424A</string>
+				<string>36322F9E12F6C08600499A53</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>3613E00D12F64B6C001A424A</string>
+				<string>36322F9F12F6C08600499A53</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -535,7 +518,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>3613E00212F64B4A001A424A</string>
+		<string>36322FA112F6C08600499A53</string>
 		<string>/Users/jabwd/XfireKit/Xcode project/XfireKit.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -555,14 +538,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>XfireKit_Prefix.pch</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -617,8 +598,8 @@
 			<true/>
 			<key>TableOfContents</key>
 			<array>
-				<string>3613E00212F64B4A001A424A</string>
-				<string>3613E00E12F64B6C001A424A</string>
+				<string>36322FA112F6C08600499A53</string>
+				<string>36322FA212F6C08600499A53</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -629,7 +610,7 @@
 			<key>WindowString</key>
 			<string>587 420 500 500 0 0 1920 1058 </string>
 			<key>WindowToolGUID</key>
-			<string>3613E00212F64B4A001A424A</string>
+			<string>36322FA112F6C08600499A53</string>
 			<key>WindowToolIsVisible</key>
 			<false/>
 		</dict>
