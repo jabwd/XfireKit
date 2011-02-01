@@ -4,6 +4,21 @@
  * Copyright Oliver Ney & Antwan van Houdt 2010-2011,
  * All rights reserved
  */
+
+#ifdef _WIN32
+#	ifdef XK_BUILDING
+#		define XK_EXPORT __declspec(dllexport)
+#	else
+#		define XK_EXPORT __declspec(dllimport)
+#	endif
+#else
+#	if __GNUC__ >= 4
+#		define XK_EXPORT __attribute__((visibility("default")))
+#	else
+#		define XK_EXPORT
+#	endif
+#endif // _WIN32
+
 // if turned to 1 XfireKit will log much more data for debugging purposes
 // to the console
 #ifndef XK_DEBUG_LOGGING
@@ -46,14 +61,13 @@ namespace XfireKit
 	 * Bit shifting for creating network useable IP's,
 	 * or creating human readable ip from an network ip
 	 */
-	uint32			ipFromString(const char *ip);
-	const char		*stringFromIP(uint32 ip);
+	XK_EXPORT uint32 ipFromString(const char *ip);
+	XK_EXPORT const char *stringFromIP(uint32 ip);
 
 	/*
 	 * Byte swapping
 	 */
-	uint16 endianSwap(uint16 p_x);
-	uint32 endianSwap(uint32 p_x);
-	uint64 endianSwap(uint64 p_x);
-
+	XK_EXPORT uint16 endianSwap(uint16 p_x);
+	XK_EXPORT uint32 endianSwap(uint32 p_x);
+	XK_EXPORT uint64 endianSwap(uint64 p_x);
 }
