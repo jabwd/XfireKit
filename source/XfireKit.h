@@ -5,6 +5,9 @@
  * All rights reserved
  */
 
+#ifndef XK_HEADER_XFIRE_KIT
+#define XK_HEADER_XFIRE_KIT
+
 #ifdef _WIN32
 #	ifdef XK_BUILDING
 #		define XK_EXPORT __declspec(dllexport)
@@ -71,3 +74,5 @@ namespace XfireKit
 	XK_EXPORT uint32 endianSwap(uint32 p_x);
 	XK_EXPORT uint64 endianSwap(uint64 p_x);
 }
+
+#endif // XK_HEADER_XFIRE_KIT
