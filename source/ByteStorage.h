@@ -54,6 +54,7 @@ namespace XfireKit
 
 		uint8 at(uint p_index) const;
 		uint8 operator[](uint p_index) const;
+		uint8 &operator[](uint p_index);
 
 		// Operators
 		ByteStorage &operator=(const ByteStorage &p_other);
@@ -141,6 +142,9 @@ namespace XfireKit
 
 	inline uint8 ByteStorage::operator[](uint p_index) const
 	{ return m_data->data[p_index]; }
+
+	inline uint8 &ByteStorage::operator[](uint p_index)
+	{ detach(); return m_data->data[p_index]; }
 }
 
 #endif // XK_HEADER_BYTE_STORAGE
