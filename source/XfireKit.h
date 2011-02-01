@@ -36,6 +36,11 @@ namespace XfireKit
 	/*
 	 * Our personal types
 	 */
+	// Convenience types
+	typedef unsigned short	ushort;
+	typedef unsigned int	uint;
+	typedef unsigned long	ulong;
+	// Fixed size types
 	typedef unsigned char	uint8;
 	typedef char 			int8;
 	typedef unsigned short	uint16;
