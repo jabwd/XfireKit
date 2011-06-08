@@ -1,19 +1,25 @@
-#include "XfireKit.h"
+#ifndef XK_HEADER_MONIKER
+#define XK_HEADER_MONIKER
+
+#include <ByteStorage.h>
 
 namespace XfireKit
 {
 	class Moniker
 	{
+    public:
 		Moniker();
-		Moniker(const uint8 *p_data);
+        Moniker(const ByteStorage &p_data);
 		Moniker(const Moniker &p_other);
-		~Moniker();
 		
 		Moniker &operator=(const Moniker &p_other);
 		bool operator==(const Moniker &p_other);
 		
 		bool isValid();
-		
-		uint8 *m_data;
+
+    private:
+        ByteStorage m_data;
 	};
 }
+
+#endif // XK_HEADER_MONIKER

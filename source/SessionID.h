@@ -1,4 +1,4 @@
-#include "XfireKit.h"
+#include <ByteStorage.h>
 
 #define XK_SESSIONID_LEN 16
 
@@ -10,7 +10,7 @@ namespace XfireKit
 	{
 	public:
 		SessionID();
-		SessionID(const uint8 *p_data);
+        SessionID(const ByteStorage &p_data);
 		SessionID(const SessionID &p_other);
 		~SessionID();
 		
@@ -23,11 +23,11 @@ namespace XfireKit
 		
 		// checks whether the sessionID contains a valid sessionID
 		bool isValid();
-		
+
+    private:
 		/*
 		 * Instance variables
 		 */
-		uint8 *m_data;
-	private:
+        ByteStorage m_data;
 	};
 }

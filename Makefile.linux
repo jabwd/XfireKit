@@ -1,0 +1,53 @@
+#
+# Linux Makefile for XfireKit 0.1
+#
+# Compiler: GCC
+#
+
+CXX = g++
+CXXFLAGS = -Wall -ggdb -fvisibility=hidden -I./source -DXK_DEBUG_LOGGING=1
+LDFLAGS =
+
+# Source Files
+CSRC = \
+	source/sha1.c
+
+CXXSRC = \
+	source/ByteStorage.cpp \
+	source/Moniker.cpp \
+	source/Session.cpp \
+	source/SessionID.cpp \
+	source/TcpSocket.cpp \
+	source/UdpSocket.cpp \
+	source/XfireConnection.cpp \
+	source/XfireKit.cpp
+    
+OBJ = $(CXXSRC:%.cpp=%.o) $(CSRC:%.c=%.o)
+
+# Dependencies
+dep: $(CXXSRC) $(CSRC)
+	@$(CXX) -MM $(CXXSRC) $(CSRC) > .depend
+    
+-include .depend
+
+# Rules
+.c.o:
+	@echo "   C     " $<
+	@$(CXX) -fPIC $(CXXFLAGS) -o $@ -c $<
+
+.cpp.o:
+	@echo "   CXX   " $<
+	@$(CXX) -fPIC $(CXXFLAGS) -o $@ -c $<
+
+libXfireKit.so: $(OBJ)
+	@echo "   LD    " $@
+	@$(CXX) -shared -Wl,-soname,$@ $(CXXFLAGS) -o $@ $(OBJ) $(LDFLAGS)
+
+all: dep libXfireKit.so
+
+clean:
+	rm -rf .depend
+	rm -rf $(OBJ)
+	rm -rf libXfireKit.so
+    
+.PHONY: all clean

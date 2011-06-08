@@ -92,7 +92,7 @@ namespace XfireKit
 		}
 		else
 		{
-			uint diff = p_len - m_data->size;
+            uint diff = p_size - m_data->size;
 			m_data->size += diff;
 			m_data->reserved -= diff;
 		}
@@ -111,7 +111,7 @@ namespace XfireKit
 	ByteStorage &ByteStorage::insert(uint p_pos, const uint8 *p_data, uint p_len)
 	{
 		if(!p_len)
-			return;
+            return *this;
 
 		detach();
 
@@ -136,4 +136,15 @@ namespace XfireKit
 		}
 		return *this;
 	}
+
+    bool ByteStorage::operator==(const ByteStorage &p_other) const
+    {
+        if(m_data == p_other.m_data)
+            return true;
+
+        if(m_data->size != p_other.m_data->size)
+            return false;
+
+        return (memcmp(m_data->data, p_other.m_data->data, m_data->size) == 0);
+    }
 }

@@ -16,6 +16,7 @@ namespace XfireKit
 		ByteStorage(const ByteStorage &p_other);
 		ByteStorage(const char *p_str, int p_len = -1);
 		ByteStorage(const uint8 *p_data, uint p_len);
+        ~ByteStorage();
 
 		// State
 		uint size() const;
@@ -31,8 +32,8 @@ namespace XfireKit
 		ByteStorage &insert(uint p_pos, const char *p_str, int p_len = -1);
 		ByteStorage &insert(uint p_pos, const ByteStorage &p_storage);
 		ByteStorage &insertByte(uint p_pos, uint8 p_byte);
-		ByteStorage &insertInt32(uint p_pos, uint8 p_byte);
-		ByteStorage &insertInt64(uint p_pos, uint8 p_byte);
+        ByteStorage &insertInt32(uint p_pos, uint32 p_int32);
+        ByteStorage &insertInt64(uint p_pos, uint64 p_int64);
 
 		ByteStorage &prepend(const uint8 *p_data, uint p_len);
 		ByteStorage &prepend(const char *p_str, int p_len = -1);
@@ -58,6 +59,7 @@ namespace XfireKit
 
 		// Operators
 		ByteStorage &operator=(const ByteStorage &p_other);
+        bool operator==(const ByteStorage &p_other) const;
 
 	private:
 		struct StorageData
@@ -89,10 +91,10 @@ namespace XfireKit
 	inline ByteStorage &ByteStorage::insertByte(uint p_pos, uint8 p_byte)
 	{ return insert(p_pos, &p_byte, 1); }
 
-	inline ByteStorage &ByteStorage::insertInt32(uint p_pos, uint8 p_byte)
+    inline ByteStorage &ByteStorage::insertInt32(uint p_pos, uint32 p_int32)
 	{ return insert(p_pos, (uint8*)&p_int32, 4); }
 
-	inline ByteStorage &ByteStorage::insertInt64(uint p_pos, uint8 p_byte)
+    inline ByteStorage &ByteStorage::insertInt64(uint p_pos, uint64 p_int64)
 	{ return insert(p_pos, (uint8*)&p_int64, 8); }
 
 	inline ByteStorage &ByteStorage::prepend(const uint8 *p_data, uint p_len)

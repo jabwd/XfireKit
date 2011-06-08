@@ -8,6 +8,8 @@
 #ifndef XK_HEADER_XFIRE_KIT
 #define XK_HEADER_XFIRE_KIT
 
+#include <cstdio>
+
 #ifdef _WIN32
 #	ifdef XK_BUILDING
 #		define XK_EXPORT __declspec(dllexport)
@@ -54,15 +56,15 @@ namespace XfireKit
 	 * printf() but then disabled when debug logging is turned off
 	 */
 #if XK_DEBUG_LOGGING
-#	define XFError(msg, args)	fprintf(stderr, "XfireKit (Error): " msg, args)
-#	define XFWarning(msg, args)	fprintf(stderr, "XfireKit (Warning): " msg, args)
-#	define XFDebug(msg, args)	fprintf(stderr, "XfireKit (Debug): " msg, args)
-#	define XFInfo(msg, args)	fprintf(stderr, "XfireKit: " msg, args)
+#	define XFError(msg, ...)	fprintf(stderr, "XfireKit (Error): " msg, ##__VA_ARGS__)
+#	define XFWarning(msg, ...)	fprintf(stderr, "XfireKit (Warning): " msg, ##__VA_ARGS__)
+#	define XFDebug(msg, ...)	fprintf(stderr, "XfireKit (Debug): " msg, ##__VA_ARGS__)
+#	define XFInfo(msg, ...)	fprintf(stderr, "XfireKit: " msg, ##__VA_ARGS__)
 #else
-#	define XFError(msg, args)	do {} while(0)
-#	define XFWarning(msg, args)	do {} while(0)
-#	define XFDebug(msg, args)	do {} while(0)
-#	define XFInfo(msg, args)	do {} while(0)
+#	define XFError(msg, ...)	do {} while(0)
+#	define XFWarning(msg, ...)	do {} while(0)
+#	define XFDebug(msg, ...)	do {} while(0)
+#	define XFInfo(msg, ...)	do {} while(0)
 #endif // XK_DEBUG_LOGGING
 
 	/*
