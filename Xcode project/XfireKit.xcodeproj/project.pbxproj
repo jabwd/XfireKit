@@ -15,6 +15,8 @@
 		360F8F3612F6B98A00C69C6F /* SessionID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 360F8F3512F6B98A00C69C6F /* SessionID.cpp */; };
 		360F8F3D12F6BAE500C69C6F /* Moniker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 360F8F3B12F6BAE500C69C6F /* Moniker.cpp */; };
 		360F8F3E12F6BAE500C69C6F /* Moniker.h in Headers */ = {isa = PBXBuildFile; fileRef = 360F8F3C12F6BAE500C69C6F /* Moniker.h */; };
+		36778CCC139FEFDE009225CE /* Friend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36778CCA139FEFDE009225CE /* Friend.cpp */; };
+		36778CCD139FEFDE009225CE /* Friend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36778CCB139FEFDE009225CE /* Friend.h */; };
 		36D56D51139FAC9200D2BC1B /* AbstractSocketFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D56D45139FAC9200D2BC1B /* AbstractSocketFactory.h */; };
 		36D56D52139FAC9200D2BC1B /* ByteStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D56D46139FAC9200D2BC1B /* ByteStorage.cpp */; };
 		36D56D53139FAC9200D2BC1B /* ByteStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D56D47139FAC9200D2BC1B /* ByteStorage.h */; };
@@ -42,6 +44,8 @@
 		360F8F3512F6B98A00C69C6F /* SessionID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SessionID.cpp; path = ../../source/SessionID.cpp; sourceTree = "<group>"; };
 		360F8F3B12F6BAE500C69C6F /* Moniker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Moniker.cpp; path = ../../source/Moniker.cpp; sourceTree = "<group>"; };
 		360F8F3C12F6BAE500C69C6F /* Moniker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Moniker.h; path = ../../source/Moniker.h; sourceTree = "<group>"; };
+		36778CCA139FEFDE009225CE /* Friend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Friend.cpp; path = ../source/Friend.cpp; sourceTree = SOURCE_ROOT; };
+		36778CCB139FEFDE009225CE /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Friend.h; path = ../source/Friend.h; sourceTree = SOURCE_ROOT; };
 		36D56D45139FAC9200D2BC1B /* AbstractSocketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractSocketFactory.h; path = ../source/AbstractSocketFactory.h; sourceTree = SOURCE_ROOT; };
 		36D56D46139FAC9200D2BC1B /* ByteStorage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ByteStorage.cpp; path = ../source/ByteStorage.cpp; sourceTree = SOURCE_ROOT; };
 		36D56D47139FAC9200D2BC1B /* ByteStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ByteStorage.h; path = ../source/ByteStorage.h; sourceTree = SOURCE_ROOT; };
@@ -86,6 +90,7 @@
 		360F8F1C12F6B8DC00C69C6F /* XfireKit */ = {
 			isa = PBXGroup;
 			children = (
+				36778CCF139FEFE2009225CE /* Friends & Groups */,
 				36D56D46139FAC9200D2BC1B /* ByteStorage.cpp */,
 				36D56D47139FAC9200D2BC1B /* ByteStorage.h */,
 				360F8F3512F6B98A00C69C6F /* SessionID.cpp */,
@@ -110,6 +115,15 @@
 				360F8F1E12F6B8DC00C69C6F /* XfireKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36778CCF139FEFE2009225CE /* Friends & Groups */ = {
+			isa = PBXGroup;
+			children = (
+				36778CCA139FEFDE009225CE /* Friend.cpp */,
+				36778CCB139FEFDE009225CE /* Friend.h */,
+			);
+			name = "Friends & Groups";
 			sourceTree = "<group>";
 		};
 		36D56D5E139FACA600D2BC1B /* SHA */ = {
@@ -163,6 +177,7 @@
 				36D56D58139FAC9200D2BC1B /* TcpSocket.h in Headers */,
 				36D56D5A139FAC9200D2BC1B /* UdpSocket.h in Headers */,
 				36D56D5C139FAC9200D2BC1B /* XfireConnection.h in Headers */,
+				36778CCD139FEFDE009225CE /* Friend.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +240,7 @@
 				36D56D57139FAC9200D2BC1B /* TcpSocket.cpp in Sources */,
 				36D56D59139FAC9200D2BC1B /* UdpSocket.cpp in Sources */,
 				36D56D5B139FAC9200D2BC1B /* XfireConnection.cpp in Sources */,
+				36778CCC139FEFDE009225CE /* Friend.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
