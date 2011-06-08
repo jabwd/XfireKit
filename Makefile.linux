@@ -14,7 +14,9 @@ CSRC = \
 
 CXXSRC = \
 	source/ByteStorage.cpp \
+	source/Friend.cpp \
 	source/Moniker.cpp \
+	source/Packet.cpp \
 	source/Session.cpp \
 	source/SessionID.cpp \
 	source/TcpSocket.cpp \

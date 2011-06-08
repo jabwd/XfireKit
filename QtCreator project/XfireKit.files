@@ -3,8 +3,12 @@
 ../source/AbstractSocketFactory.h
 ../source/ByteStorage.cpp
 ../source/ByteStorage.h
+../source/Friend.cpp
+../source/Friend.h
 ../source/Moniker.cpp
 ../source/Moniker.h
+../source/Packet.cpp
+../source/Packet.h
 ../source/Session.cpp
 ../source/Session.h
 ../source/SessionID.cpp

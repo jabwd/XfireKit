@@ -119,7 +119,37 @@ namespace XfireKit
 		resize(m_data->size + p_len);
 
 		memmove(m_data->data + p_pos + p_len, m_data->data + p_pos, oldSize - p_pos + 1);
-		memcpy(m_data + p_pos, p_data, p_len);
+		memcpy(m_data->data + p_pos, p_data, p_len);
+
+		return *this;
+	}
+
+	ByteStorage &ByteStorage::replace(uint p_pos, const uint8 *p_data, uint p_len)
+	{
+		if(!p_len || p_pos >= m_data->size)
+			return *this;
+
+		detach();
+
+		if((p_pos + p_len) > m_data->size)
+			p_len = m_data->size - p_pos;
+
+		memcpy(m_data->data + p_pos, p_data, p_len);
+
+		return *this;
+	}
+
+	ByteStorage &ByteStorage::replace(uint p_pos, uint p_len, uint8 p_byte)
+	{
+		if(!p_len || p_pos >= m_data->size)
+			return *this;
+
+		detach();
+
+		if((p_pos + p_len) > m_data->size)
+			p_len = m_data->size - p_pos;
+
+		memset(m_data->data + p_pos, p_byte, p_len);
 
 		return *this;
 	}

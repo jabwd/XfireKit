@@ -67,6 +67,11 @@ namespace XfireKit
 #	define XFInfo(msg, ...)	do {} while(0)
 #endif // XK_DEBUG_LOGGING
 
+	enum PacketType
+	{
+		InvalidPacket = 0x0000
+	};
+
 	/*
 	 * Bit shifting for creating network useable IP's,
 	 * or creating human readable ip from an network ip
@@ -80,6 +85,17 @@ namespace XfireKit
 	XK_EXPORT uint16 endianSwap(uint16 p_x);
 	XK_EXPORT uint32 endianSwap(uint32 p_x);
 	XK_EXPORT uint64 endianSwap(uint64 p_x);
+
+	/*
+	 * Helper functions
+	 */
+	template<typename T>
+	XK_EXPORT T max(T p_a, T p_b)
+	{ return (p_a > p_b) ? p_a : p_b; }
+
+	template<typename T>
+	XK_EXPORT T min(T p_a, T p_b)
+	{ return (p_a < p_b) ? p_a : p_b; }
 }
 
 #endif // XK_HEADER_XFIRE_KIT

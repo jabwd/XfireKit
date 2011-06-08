@@ -32,6 +32,7 @@ namespace XfireKit
 		ByteStorage &insert(uint p_pos, const char *p_str, int p_len = -1);
 		ByteStorage &insert(uint p_pos, const ByteStorage &p_storage);
 		ByteStorage &insertByte(uint p_pos, uint8 p_byte);
+		ByteStorage &insertInt16(uint p_pos, uint16 p_int16);
         ByteStorage &insertInt32(uint p_pos, uint32 p_int32);
         ByteStorage &insertInt64(uint p_pos, uint64 p_int64);
 
@@ -39,6 +40,7 @@ namespace XfireKit
 		ByteStorage &prepend(const char *p_str, int p_len = -1);
 		ByteStorage &prepend(const ByteStorage &p_storage);
 		ByteStorage &prependByte(uint8 p_byte);
+		ByteStorage &prependInt16(uint16 p_int16);
 		ByteStorage &prependInt32(uint32 p_int32);
 		ByteStorage &prependInt64(uint64 p_int64);
 
@@ -46,8 +48,14 @@ namespace XfireKit
 		ByteStorage &append(const char *p_str, int p_len = -1);
 		ByteStorage &append(const ByteStorage &p_storage);
 		ByteStorage &appendByte(uint8 p_byte);
+		ByteStorage &appendInt16(uint16 p_int16);
 		ByteStorage &appendInt32(uint32 p_int32);
 		ByteStorage &appendInt64(uint64 p_int64);
+
+		ByteStorage &replace(uint p_pos, const uint8 *p_data, uint p_len);
+		ByteStorage &replace(uint p_pos, const char *p_str, int p_len = -1);
+		ByteStorage &replace(uint p_pos, uint p_len, uint8 p_byte);
+		ByteStorage &replace(uint p_pos, const ByteStorage &p_data);
 
 		// Accessing
 		uint8 *data();
@@ -91,6 +99,9 @@ namespace XfireKit
 	inline ByteStorage &ByteStorage::insertByte(uint p_pos, uint8 p_byte)
 	{ return insert(p_pos, &p_byte, 1); }
 
+	inline ByteStorage &ByteStorage::insertInt16(uint p_pos, uint16 p_int16)
+	{ return insert(p_pos, (uint8*)&p_int16, 2); }
+
     inline ByteStorage &ByteStorage::insertInt32(uint p_pos, uint32 p_int32)
 	{ return insert(p_pos, (uint8*)&p_int32, 4); }
 
@@ -108,6 +119,9 @@ namespace XfireKit
 
 	inline ByteStorage &ByteStorage::prependByte(uint8 p_byte)
 	{ return insertByte(0, p_byte); }
+
+	inline ByteStorage &ByteStorage::prependInt16(uint16 p_int16)
+	{ return insertInt16(0, p_int16); }
 
 	inline ByteStorage &ByteStorage::prependInt32(uint32 p_int32)
 	{ return insertInt32(0, p_int32); }
@@ -127,11 +141,20 @@ namespace XfireKit
 	inline ByteStorage &ByteStorage::appendByte(uint8 p_byte)
 	{ return insertByte(m_data->size, p_byte); }
 
+	inline ByteStorage &ByteStorage::appendInt16(uint16 p_int16)
+	{ return insertInt16(m_data->size, p_int16); }
+
 	inline ByteStorage &ByteStorage::appendInt32(uint32 p_int32)
 	{ return insertInt32(m_data->size, p_int32); }
 
 	inline ByteStorage &ByteStorage::appendInt64(uint64 p_int64)
 	{ return insertInt64(m_data->size, p_int64); }
+
+	inline ByteStorage &ByteStorage::replace(uint p_pos, const char *p_str, int p_len)
+	{ return replace(p_pos, (uint8*)p_str, (p_len == -1) ? strlen(p_str) : p_len); }
+
+	inline ByteStorage &ByteStorage::replace(uint p_pos, const ByteStorage &p_data)
+	{ return replace(p_pos, p_data.constData(), p_data.size()); }
 
 	inline uint8 *ByteStorage::data()
 	{ detach(); return m_data->data; }
