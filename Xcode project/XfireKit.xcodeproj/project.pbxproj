@@ -15,6 +15,18 @@
 		360F8F3612F6B98A00C69C6F /* SessionID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 360F8F3512F6B98A00C69C6F /* SessionID.cpp */; };
 		360F8F3D12F6BAE500C69C6F /* Moniker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 360F8F3B12F6BAE500C69C6F /* Moniker.cpp */; };
 		360F8F3E12F6BAE500C69C6F /* Moniker.h in Headers */ = {isa = PBXBuildFile; fileRef = 360F8F3C12F6BAE500C69C6F /* Moniker.h */; };
+		36D56D51139FAC9200D2BC1B /* AbstractSocketFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D56D45139FAC9200D2BC1B /* AbstractSocketFactory.h */; };
+		36D56D52139FAC9200D2BC1B /* ByteStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D56D46139FAC9200D2BC1B /* ByteStorage.cpp */; };
+		36D56D53139FAC9200D2BC1B /* ByteStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D56D47139FAC9200D2BC1B /* ByteStorage.h */; };
+		36D56D54139FAC9200D2BC1B /* Session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D56D48139FAC9200D2BC1B /* Session.cpp */; };
+		36D56D55139FAC9200D2BC1B /* Session.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D56D49139FAC9200D2BC1B /* Session.h */; };
+		36D56D56139FAC9200D2BC1B /* SocketDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D56D4A139FAC9200D2BC1B /* SocketDelegate.h */; };
+		36D56D57139FAC9200D2BC1B /* TcpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D56D4B139FAC9200D2BC1B /* TcpSocket.cpp */; };
+		36D56D58139FAC9200D2BC1B /* TcpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D56D4C139FAC9200D2BC1B /* TcpSocket.h */; };
+		36D56D59139FAC9200D2BC1B /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D56D4D139FAC9200D2BC1B /* UdpSocket.cpp */; };
+		36D56D5A139FAC9200D2BC1B /* UdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D56D4E139FAC9200D2BC1B /* UdpSocket.h */; };
+		36D56D5B139FAC9200D2BC1B /* XfireConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36D56D4F139FAC9200D2BC1B /* XfireConnection.cpp */; };
+		36D56D5C139FAC9200D2BC1B /* XfireConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D56D50139FAC9200D2BC1B /* XfireConnection.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +42,18 @@
 		360F8F3512F6B98A00C69C6F /* SessionID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SessionID.cpp; path = ../../source/SessionID.cpp; sourceTree = "<group>"; };
 		360F8F3B12F6BAE500C69C6F /* Moniker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Moniker.cpp; path = ../../source/Moniker.cpp; sourceTree = "<group>"; };
 		360F8F3C12F6BAE500C69C6F /* Moniker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Moniker.h; path = ../../source/Moniker.h; sourceTree = "<group>"; };
+		36D56D45139FAC9200D2BC1B /* AbstractSocketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractSocketFactory.h; path = ../source/AbstractSocketFactory.h; sourceTree = SOURCE_ROOT; };
+		36D56D46139FAC9200D2BC1B /* ByteStorage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ByteStorage.cpp; path = ../source/ByteStorage.cpp; sourceTree = SOURCE_ROOT; };
+		36D56D47139FAC9200D2BC1B /* ByteStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ByteStorage.h; path = ../source/ByteStorage.h; sourceTree = SOURCE_ROOT; };
+		36D56D48139FAC9200D2BC1B /* Session.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Session.cpp; path = ../source/Session.cpp; sourceTree = SOURCE_ROOT; };
+		36D56D49139FAC9200D2BC1B /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Session.h; path = ../source/Session.h; sourceTree = SOURCE_ROOT; };
+		36D56D4A139FAC9200D2BC1B /* SocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketDelegate.h; path = ../source/SocketDelegate.h; sourceTree = SOURCE_ROOT; };
+		36D56D4B139FAC9200D2BC1B /* TcpSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TcpSocket.cpp; path = ../source/TcpSocket.cpp; sourceTree = SOURCE_ROOT; };
+		36D56D4C139FAC9200D2BC1B /* TcpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TcpSocket.h; path = ../source/TcpSocket.h; sourceTree = SOURCE_ROOT; };
+		36D56D4D139FAC9200D2BC1B /* UdpSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UdpSocket.cpp; path = ../source/UdpSocket.cpp; sourceTree = SOURCE_ROOT; };
+		36D56D4E139FAC9200D2BC1B /* UdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UdpSocket.h; path = ../source/UdpSocket.h; sourceTree = SOURCE_ROOT; };
+		36D56D4F139FAC9200D2BC1B /* XfireConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XfireConnection.cpp; path = ../source/XfireConnection.cpp; sourceTree = SOURCE_ROOT; };
+		36D56D50139FAC9200D2BC1B /* XfireConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XfireConnection.h; path = ../source/XfireConnection.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +86,17 @@
 		360F8F1C12F6B8DC00C69C6F /* XfireKit */ = {
 			isa = PBXGroup;
 			children = (
-				360F8F2B12F6B91900C69C6F /* XfireKit.cpp */,
-				360F8F2C12F6B91900C69C6F /* XfireKit.h */,
+				36D56D46139FAC9200D2BC1B /* ByteStorage.cpp */,
+				36D56D47139FAC9200D2BC1B /* ByteStorage.h */,
 				360F8F3512F6B98A00C69C6F /* SessionID.cpp */,
 				360F8F3312F6B98200C69C6F /* SessionID.h */,
 				360F8F3B12F6BAE500C69C6F /* Moniker.cpp */,
 				360F8F3C12F6BAE500C69C6F /* Moniker.h */,
-				360F8F2F12F6B95C00C69C6F /* sha1.c */,
-				360F8F3012F6B95C00C69C6F /* sha1.h */,
+				36D56D65139FACCA00D2BC1B /* Connection */,
+				36D56D64139FACBE00D2BC1B /* Socket */,
+				36D56D5E139FACA600D2BC1B /* SHA */,
+				360F8F2B12F6B91900C69C6F /* XfireKit.cpp */,
+				360F8F2C12F6B91900C69C6F /* XfireKit.h */,
 				360F8F1F12F6B8DC00C69C6F /* XfireKitProj.xcconfig */,
 				360F8F2012F6B8DC00C69C6F /* XfireKitTarget.xcconfig */,
 				360F8F1D12F6B8DC00C69C6F /* Supporting Files */,
@@ -85,6 +112,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		36D56D5E139FACA600D2BC1B /* SHA */ = {
+			isa = PBXGroup;
+			children = (
+				360F8F2F12F6B95C00C69C6F /* sha1.c */,
+				360F8F3012F6B95C00C69C6F /* sha1.h */,
+			);
+			name = SHA;
+			sourceTree = "<group>";
+		};
+		36D56D64139FACBE00D2BC1B /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				36D56D4A139FAC9200D2BC1B /* SocketDelegate.h */,
+				36D56D45139FAC9200D2BC1B /* AbstractSocketFactory.h */,
+				36D56D4B139FAC9200D2BC1B /* TcpSocket.cpp */,
+				36D56D4C139FAC9200D2BC1B /* TcpSocket.h */,
+				36D56D4D139FAC9200D2BC1B /* UdpSocket.cpp */,
+				36D56D4E139FAC9200D2BC1B /* UdpSocket.h */,
+			);
+			name = Socket;
+			sourceTree = "<group>";
+		};
+		36D56D65139FACCA00D2BC1B /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				36D56D48139FAC9200D2BC1B /* Session.cpp */,
+				36D56D49139FAC9200D2BC1B /* Session.h */,
+				36D56D4F139FAC9200D2BC1B /* XfireConnection.cpp */,
+				36D56D50139FAC9200D2BC1B /* XfireConnection.h */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -96,6 +156,13 @@
 				360F8F3212F6B95C00C69C6F /* sha1.h in Headers */,
 				360F8F3412F6B98200C69C6F /* SessionID.h in Headers */,
 				360F8F3E12F6BAE500C69C6F /* Moniker.h in Headers */,
+				36D56D51139FAC9200D2BC1B /* AbstractSocketFactory.h in Headers */,
+				36D56D53139FAC9200D2BC1B /* ByteStorage.h in Headers */,
+				36D56D55139FAC9200D2BC1B /* Session.h in Headers */,
+				36D56D56139FAC9200D2BC1B /* SocketDelegate.h in Headers */,
+				36D56D58139FAC9200D2BC1B /* TcpSocket.h in Headers */,
+				36D56D5A139FAC9200D2BC1B /* UdpSocket.h in Headers */,
+				36D56D5C139FAC9200D2BC1B /* XfireConnection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +220,11 @@
 				360F8F3112F6B95C00C69C6F /* sha1.c in Sources */,
 				360F8F3612F6B98A00C69C6F /* SessionID.cpp in Sources */,
 				360F8F3D12F6BAE500C69C6F /* Moniker.cpp in Sources */,
+				36D56D52139FAC9200D2BC1B /* ByteStorage.cpp in Sources */,
+				36D56D54139FAC9200D2BC1B /* Session.cpp in Sources */,
+				36D56D57139FAC9200D2BC1B /* TcpSocket.cpp in Sources */,
+				36D56D59139FAC9200D2BC1B /* UdpSocket.cpp in Sources */,
+				36D56D5B139FAC9200D2BC1B /* XfireConnection.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
