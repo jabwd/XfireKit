@@ -12,7 +12,6 @@ namespace XfireKit
 		SessionID();
         SessionID(const ByteStorage &p_data);
 		SessionID(const SessionID &p_other);
-		~SessionID();
 		
 		SessionID &operator=(const SessionID &p_other);
 		

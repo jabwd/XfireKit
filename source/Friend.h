@@ -1,5 +1,6 @@
 #include <ByteStorage.h>
 #include <Session.h>
+#include <SessionID.h>
 
 #define AVATAR_IMAGE_DEFAULT "http://media.xfire.com/xfire/xf/images/avatars/gallery/default/xfire100.jpg"
 #define AVATAR_IMAGE_GALLERY "http://media.xfire.com/xfire/xf/images/avatars/gallery/default/%u.gif"
@@ -11,7 +12,7 @@ namespace XfireKit
 	class Friend 
 	{
 	public:
-		Friend(uint32 p_userID);
+		Friend(uint32 p_userID, Session *p_session);
 		~Friend();
         
         uint32 userID();
@@ -19,7 +20,10 @@ namespace XfireKit
         std::string nickname();
         std::string firstName();
         std::string lastName();
-        Session     *session();
+        bool        isOnline();
+        
+        Session     *session()      const;
+        const SessionID   &sessionID()    const;
         uint32      gameID();
         uint32      gameIP();
         uint16      gamePort();
@@ -29,10 +33,10 @@ namespace XfireKit
         
         // this method checks the xfire prefs whether the user wants to show
         // nicknames, or usernames in the friends list
-        std::string displayName();
+        const std::string &displayName() const;
         
         // operators
-        bool    operator==(const Friend &p_other);
+        bool    operator==(const Friend &p_other) const;
         Friend  &operator=(const Friend &p_other);
         
     private:
@@ -43,9 +47,11 @@ namespace XfireKit
         std::string m_nickname;
         std::string m_firstName;
         std::string m_lastName;
+        bool        m_isOnline;
         
         // assigned value, no need to release this
         Session     *m_session;
+        SessionID   m_sessionID;
         
         // games
         uint32 m_gameID;
@@ -78,8 +84,11 @@ namespace XfireKit
     inline std::string Friend::lastName()
     { return m_lastName; }
     
-    inline Session * Friend::session()
+    inline Session * Friend::session() const
     { return m_session; }
+    
+    inline const SessionID &Friend::sessionID() const
+    { return m_sessionID; }
     
     inline uint32 Friend::gameID()
     { return m_gameID; }
@@ -98,4 +107,7 @@ namespace XfireKit
     
     inline uint64 Friend::sendSequence()
     { return m_sendSequence; }
+    
+    inline bool Friend::isOnline()
+    { return m_isOnline; }
 }
